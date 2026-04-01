@@ -1,6 +1,7 @@
 # A list of invited guests and invitation message
 
 guests = ['Paul', 'Joy', 'Blue', 'Victor']
+print(len(guests))
 message = 'You are invited for dinner at my house.'
 
 print(guests)
