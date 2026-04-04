@@ -2,7 +2,7 @@
 
 countries = input('Enter a list of countries, separeted by spaces:').lower()
 countries_list = countries.split()
-if len(countries_list) == 0:
+if not countries_list:
     print('No countries were entered.')
 else:
     for country in countries_list:
