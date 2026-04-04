@@ -2,27 +2,20 @@
 
 guests = ['Paul', 'Joy', 'Blue', 'Victor']
 print(len(guests))
-message = 'You are invited for dinner at my house.'
-
-print(guests)
-
-print(f'Dear {guests[0]},  {message}')
-print(f'Dear {guests[1]},  {message}')
-print(f'Dear {guests[2]},  {message}')
-print(f'Dear {guests[3]},  {message}')
+# Modify to use for loop to print the invitation
+for guest in guests:
+    print(f'\nDear {guest}, you are invited to my dinner party this Saturday.')
 
 # remove the guest that can't make it and replace them with a new person
-cannot_make_it = 'Blue'
+cannot_make_it = guests[2]
 guests.remove(cannot_make_it)
 
 print(f'{cannot_make_it} cannot make it for the dinner')
 guests.insert(2, 'Cate')
 print(guests)
 
-print(f'Dear {guests[0]},  {message}')
-print(f'Dear {guests[1]},  {message}')
-print(f'Dear {guests[2]},  {message}')
-print(f'Dear {guests[3]},  {message}')
+for guest in guests:
+    print(f'\nDear {guest}, you are invited to my dinner party this Saturday.')
 
 print('\nI found new people who would like to attend the dinner.')
 
@@ -31,13 +24,8 @@ guests.insert(0, 'Ivy')
 guests.insert(2, 'John')
 guests.append('Mark')
 
-print(f'Dear {guests[0]},  {message}')
-print(f'Dear {guests[1]},  {message}')
-print(f'Dear {guests[2]},  {message}')
-print(f'Dear {guests[3]},  {message}')
-print(f'Dear {guests[4]},  {message}')
-print(f'Dear {guests[5]},  {message}')
-print(f'Dear {guests[6]},  {message}')
+for guest in guests:
+    print(f'\nDear {guest}, you are invited to my dinner party this Saturday.')
 print(guests)
 
 print('There has been a problem with the organisation of this dinner.\nI can only invite two guests')
