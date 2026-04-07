@@ -1,6 +1,20 @@
 # A list that uses a for loop to print  a sentence for each item in the list.
 pizzas = ['beef barbeque', 'diavola', 'hawaiian', 'pepperoni', 'margherita']
 
+#Make a copy of the list of pizzas.
+friend_pizzas = pizzas[:]
+#Add a new pizza to the original list.
+pizzas.append('vegetarian')
+#Add a diffrient pizza to the friend_pizzas list.
+friend_pizzas.append('seafood')
+# Print the first list, then the second list  to show that they are different.
+print('My favorite pizzas are:')
+for pizza in pizzas:
+    print(f'{pizza.title()} pizza')
+
+print("\nMy friend's favorite pizzas are:")
+for pizza in friend_pizzas:
+    print(f'{pizza.title()} pizza')
 # Use slice to print the first three items in the list.
 print('The first three items in the list are:')
 for pizza in pizzas[:3]:
