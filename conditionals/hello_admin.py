@@ -1,4 +1,4 @@
-# Check if a user is an admin and greet them accondingly.
+# Check if a user is an admin and greet them accordingly.
 users = ['admin', 'john', 'joy', 'sarah', 'james']
 for user in users:
     if user == 'admin':
