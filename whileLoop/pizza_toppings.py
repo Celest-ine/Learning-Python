@@ -9,11 +9,17 @@ while True:
     pizza_topping = input(prompt)
     
     if pizza_topping.lower() == "quit":
-        print("Finished adding pizza toppings.")
+        print("\nFinished adding pizza toppings.")
         break
+    elif pizza_topping.strip() == "":
+        print("\nYou did not enter a topping. Please try again.")
+        continue
     toppings.append(pizza_topping)
-    print(f"You have added {pizza_topping} to your pizza.")
+    print(f"\nYou have added {pizza_topping} to your pizza.")
 
-print(f"Here are your {len(toppings)} toppings: ")
-for topping in toppings:
-    print(f"- {topping}")
+if len(toppings) == 0:
+    print("\nYou did not add any toppings to your pizza.")
+else:
+    print(f"\nHere are your {len(toppings)} toppings: ")
+    for topping in toppings:
+        print(f"- {topping}")
