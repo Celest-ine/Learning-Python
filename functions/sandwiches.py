@@ -1,5 +1,5 @@
 def make_sandwich(*items):
-    """Accept a list of items that a user wants in threir sandwich."""
+    """Accept a list of items that a user wants in their sandwich."""
     print("Your sandwich will have the following items:")
     for item in items:
         print(f"- {item}")
