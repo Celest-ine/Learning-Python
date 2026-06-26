@@ -5,5 +5,7 @@ def make_sandwich(*items):
         print(f"- {item}")
 
 make_sandwich("peanut butter", "jam")
+print()
 make_sandwich("avocado")
+print()
 make_sandwich("ham", "tomatoes", "onions", "mayonaise")
