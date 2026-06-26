@@ -10,7 +10,14 @@ def car(manufacture, model_name, **kwargs):
 
     return car_info
 
+def print_car_info(car_model):
+    """Print the car information in a user friendly way"""
+
+    for key, value in car_model.items():
+        print(f"{key.title()}: {value}")
+
 car_model = car('subaru', 'outback', color='blue', tow_package=True)
-print(car_model)
+print_car_info(car_model)
+print()
 car_model = car('kia', 'sportage', color='black', warrant=True)
-print(car_model)
+print_car_info(car_model)
