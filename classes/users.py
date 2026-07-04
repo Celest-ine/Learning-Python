@@ -19,7 +19,7 @@ class User:
 
 jane = User("Jane", "Doe", 28, "New York", "Software Engineer")
 mary = User("Mary", "Bling", 49, "Uganda", "Data Scientist")
-jack = User("Jack", "Sparrow", 35, "Caribbean", "Pirrate")
+jack = User("Jack", "Sparrow", 35, "Caribbean", "Pirate")
 
 jane.describe_user()
 jane.greet_user()
