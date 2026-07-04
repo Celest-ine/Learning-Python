@@ -1,4 +1,4 @@
-class Users:
+class User:
     """Simulate a user profile."""
 
     def __init__(self, first_name, last_name, age, location, occupation):
@@ -17,9 +17,9 @@ class Users:
         """Prints a personalized greeting to the user."""
         print(f"Hello, {self.first_name} {self.last_name}. Welcome to our platform!")
 
-jane = Users("Jane", "Doe", 28, "New York", "Software engineer")
-mary = Users("Mary", "Bling", 49, "Uganda", "Data Scientist")
-jack = Users("Jack", "Sparrow", 35, "Caribbean", "Pirrate")
+jane = User("Jane", "Doe", 28, "New York", "Software engineer")
+mary = User("Mary", "Bling", 49, "Uganda", "Data Scientist")
+jack = User("Jack", "Sparrow", 35, "Caribbean", "Pirrate")
 
 jane.describe_user()
 jane.greet_user()
