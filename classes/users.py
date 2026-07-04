@@ -17,7 +17,7 @@ class User:
         """Prints a personalized greeting to the user."""
         print(f"Hello, {self.first_name} {self.last_name}. Welcome to our platform!")
 
-jane = User("Jane", "Doe", 28, "New York", "Software engineer")
+jane = User("Jane", "Doe", 28, "New York", "Software Engineer")
 mary = User("Mary", "Bling", 49, "Uganda", "Data Scientist")
 jack = User("Jack", "Sparrow", 35, "Caribbean", "Pirrate")
 
