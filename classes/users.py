@@ -23,9 +23,11 @@ jack = Users("Jack", "Sparrow", 35, "Caribbean", "Pirrate")
 
 jane.describe_user()
 jane.greet_user()
+print()
 
 mary.describe_user()
 mary.greet_user()
+print()
 
 jack.describe_user()
 jack.greet_user()
