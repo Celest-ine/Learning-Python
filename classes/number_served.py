@@ -27,7 +27,10 @@ restaurant_1 = Restaurant("Biriyani House", "Indian")
 restaurant_2 = Restaurant("Java cafe", "Continental")
 
 restaurant_1.describe_restaurant()
+print()
 restaurant_2.describe_restaurant()
+print()
 restaurant.describe_restaurant()
 
 restaurant.open_restaurant()
+print()
