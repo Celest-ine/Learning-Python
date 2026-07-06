@@ -8,10 +8,15 @@ class User:
         self.age = age
         self.location = location
         self.occupation = occupation
+        self.login_attempts = 0
 
     def describe_user(self):
         """Prints a summary of the user's information."""
         print(f"User Profile:\nName: {self.first_name} {self.last_name} \nAge: {self.age} \nLocation: {self.location} \nOccupation: {self.occupation}")
+
+    def increment_login_attempts(self):
+        """Increments the number of login attempts by 1."""
+        self.login_atempts += 1
 
     def greet_user(self):
         """Prints a personalized greeting to the user."""
@@ -22,6 +27,9 @@ mary = User("Mary", "Bling", 49, "Uganda", "Data Scientist")
 jack = User("Jack", "Sparrow", 35, "Caribbean", "Pirate")
 
 jane.describe_user()
+jane.increment_login_attempts()
+jane.increment_login_attempts()
+jane.increment_login_attempts()
 jane.greet_user()
 print()
 
