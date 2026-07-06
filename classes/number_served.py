@@ -15,6 +15,11 @@ class Restaurant:
         print(f"{self.restaurant_name} serves {self.cuisine_type} cuisine.")
         print(f"{self.restaurant_name} has served {self.number_served} customers.")
 
+    def set_number_served(self, number_served):
+        """Sets the number of customes served"""
+        
+        self. number_served = number_served
+
     def open_restaurant(self):
         """Prints a message indicating that the resturant is open."""
         
@@ -26,7 +31,7 @@ restaurant_1 = Restaurant("Biriyani House", "Indian")
 
 restaurant_2 = Restaurant("Java cafe", "Continental")
 
-restaurant_1.number_served = 80
+restaurant_1.set_number_served(50)
 restaurant_1.describe_restaurant()
 restaurant_1.open_restaurant()
 print()
