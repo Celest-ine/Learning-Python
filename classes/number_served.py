@@ -18,12 +18,19 @@ class Restaurant:
     def set_number_served(self, number_served):
         """Sets the number of customes served"""
         
-        self.number_served = number_served
+        if number_served >= 0:
+            self.number_served = number_served
+        else:
+            print("Number of customers served cannot be negative.")
 
     def increment_number_served(self, additional_customers):
         """Increments the number of customers served."""
+        
+        if additional_customers >= 0:
+            self.number_served += additional_customers
+        else:
+            print("Additional customers cannot be negative.")
 
-        self.number_served += additional_customers
 
     def open_restaurant(self):
         """Prints a message indicating that the resturant is open."""
