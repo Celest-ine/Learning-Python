@@ -31,16 +31,17 @@ restaurant_1 = Restaurant("Biriyani House", "Indian")
 
 restaurant_2 = Restaurant("Java cafe", "Continental")
 
-restaurant_1.set_number_served(50)
+restaurant_1.set_number_served(50) # setting the number of customers served using a method
 restaurant_1.describe_restaurant()
 restaurant_1.open_restaurant()
 print()
 
-restaurant_2.number_served = 120
+restaurant_2.number_served = 120 # accesing the attribute directly
 restaurant_2.describe_restaurant()
 restaurant_2.open_restaurant()
 print()
-restaurant.describe_restaurant()
 
+restaurant.set_number_served(200)
+restaurant.describe_restaurant()
 restaurant.open_restaurant()
 print()
