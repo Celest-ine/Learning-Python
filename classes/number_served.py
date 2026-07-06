@@ -16,7 +16,7 @@ class Restaurant:
         print(f"{self.restaurant_name} has served {self.number_served} customers.")
 
     def set_number_served(self, number_served):
-        """Sets the number of customes served"""
+        """Sets the number of customers served"""
         
         if number_served >= 0:
             self.number_served = number_served
