@@ -22,6 +22,10 @@ class User:
         """Resets the number of login attemts back to 0."""
         self.login_attempts = 0
 
+    def display_login_attempts(self):
+        """Displays the number of login attempts."""
+        print(f"Login attempts: {self.login_attempts}")
+
     def greet_user(self):
         """Prints a personalized greeting to the user."""
         print(f"Hello, {self.first_name} {self.last_name}. Welcome to our platform!")
@@ -34,9 +38,9 @@ jane.describe_user()
 jane.increment_login_attempts()
 jane.increment_login_attempts()
 jane.increment_login_attempts()
-print(f"Login attempts for {jane.first_name}: {jane.login_attempts}")
+jane.display_login_attempts()
 jane.reset_login_attempts()
-print(f"Login attempts for {jane.first_name} after reset: {jane.login_attempts}")
+jane.display_login_attempts()
 jane.greet_user()
 print()
 
