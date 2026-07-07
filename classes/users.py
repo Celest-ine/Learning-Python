@@ -57,6 +57,7 @@ joy.show_privileges()
 joy.increment_login_attempts()
 joy.increment_login_attempts()
 joy.reset_login_attempts()
+joy.display_login_attempts()
 print()
 
 jane.describe_user()
