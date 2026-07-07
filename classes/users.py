@@ -37,7 +37,7 @@ class Privileges:
     def __init__(self, privileges=None):
         """Initialise the attribute of the class."""
 
-        if privileges is None: # To avoid making default value mutable
+        if privileges is None: # To avoid making default value mutable so that each object gets its own list
             privileges = [
                 "can post",
                 "can delete post",
