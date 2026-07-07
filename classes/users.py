@@ -30,6 +30,22 @@ class User:
         """Prints a personalized greeting to the user."""
         print(f"Hello, {self.first_name} {self.last_name}. Welcome to our platform!")
 
+
+class Privileges:
+    """Describes the privileges fo special users."""
+
+    def __init__(self, privileges=["can post", "can delete post", "can ban user", "can add user"]):
+        """Initialise the attribute of the class."""
+
+        self.privileges = privileges
+
+    def show_privileges(self):
+        """Display the privileges of the admin user."""
+
+        print("Admin Privileges:")
+        for privilege in self.privilages:
+            print(f"- {privilege}")
+
 class Admin(User):
     """Represent an admin user."""
 
@@ -38,14 +54,7 @@ class Admin(User):
         Then initialize attributes specific to an admin user.
         """
         super().__init__(first_name, last_name, age, location, occupation)
-        self.privilages = ["can post", "can delete post", "can ban user", "can add user"]
-
-    def show_privileges(self):
-        """Display the privileges of the admin user."""
-
-        print("Admin Privileges:")
-        for privilege in self.privilages:
-            print(f"- {privilege}")
+        self.privilages = Privileges()
     
 joy = Admin("Joy", "Ndanu", 30, "Kenya", "Ai Engineer")
 jane = User("Jane", "Doe", 28, "New York", "Software Engineer")
@@ -53,7 +62,7 @@ mary = User("Mary", "Bling", 49, "Uganda", "Data Scientist")
 jack = User("Jack", "Sparrow", 35, "Caribbean", "Pirate")
 
 joy.describe_user()
-joy.show_privileges()
+joy.privilages.show_privileges()
 joy.increment_login_attempts()
 joy.increment_login_attempts()
 joy.reset_login_attempts()
