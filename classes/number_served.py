@@ -57,6 +57,7 @@ class IceCreamStand(Restaurant):
             print(f"{self.restaurant_name} currently has no flavored ice cream available.")
 
 my_ice_cream_stand = IceCreamStand("Sweet Treats")
+my_ice_cream_stand.describe_restaurant()
 my_ice_cream_stand.flavors = ["blueberry", "vanilla", "chocolate fudge"]
 my_ice_cream_stand.display_flavors()
 
