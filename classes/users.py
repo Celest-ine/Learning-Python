@@ -38,13 +38,13 @@ class Admin(User):
         Then initialize attributes specific to an admin user.
         """
         super().__init__(first_name, last_name, age, location, occupation)
-        self.previlages = ["can post", "can delete post", "can ban user", "can add user"]
+        self.privilages = ["can post", "can delete post", "can ban user", "can add user"]
 
     def show_privileges(self):
         """Display the privileges of the admin user."""
 
         print("Admin Privileges:")
-        for privilege in self.previlages:
+        for privilege in self.privilages:
             print(f"- {privilege}")
     
 joy = Admin("Joy", "Ndanu", 30, "Kenya", "Ai Engineer")
