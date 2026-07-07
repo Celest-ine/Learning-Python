@@ -43,7 +43,7 @@ class Privileges:
         """Display the privileges of the admin user."""
 
         print("Admin Privileges:")
-        for privilege in self.privilages:
+        for privilege in self.privileges:
             print(f"- {privilege}")
 
 class Admin(User):
