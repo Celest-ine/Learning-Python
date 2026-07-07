@@ -34,8 +34,16 @@ class User:
 class Privileges:
     """Describes the privileges fo special users."""
 
-    def __init__(self, privileges=["can post", "can delete post", "can ban user", "can add user"]):
+    def __init__(self, privileges=None):
         """Initialise the attribute of the class."""
+
+        if privileges is None: # To avoid making default value mutable
+            privileges = [
+                "can post",
+                "can delete post",
+                "can ban user"
+                "can add user",
+            ]
 
         self.privileges = privileges
 
