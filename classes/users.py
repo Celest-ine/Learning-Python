@@ -30,9 +30,34 @@ class User:
         """Prints a personalized greeting to the user."""
         print(f"Hello, {self.first_name} {self.last_name}. Welcome to our platform!")
 
+class Admin(User):
+    """Represent an admin user."""
+
+    def __init__(self, first_name, last_name, age, location, occupation):
+        """Initialize attributes of the parent class.
+        Then initialize attributes specific to an admin user.
+        """
+        super().__init__(first_name, last_name, age, location, occupation)
+        self.previlages = ["can post", "can delete post", "can ban user", "can add user"]
+
+    def show_privileges(self):
+        """Display the privileges of the admin user."""
+
+        print("Admin Privileges:")
+        for privilege in self.previlages:
+            print(f"- {privilege}")
+    
+joy = Admin("Joy", "Ndanu", 30, "Kenya", "Ai Engineer")
 jane = User("Jane", "Doe", 28, "New York", "Software Engineer")
 mary = User("Mary", "Bling", 49, "Uganda", "Data Scientist")
 jack = User("Jack", "Sparrow", 35, "Caribbean", "Pirate")
+
+joy.describe_user()
+joy.show_privileges()
+joy.increment_login_attempts()
+joy.increment_login_attempts()
+joy.reset_login_attempts()
+print()
 
 jane.describe_user()
 jane.increment_login_attempts()
