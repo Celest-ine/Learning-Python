@@ -54,7 +54,7 @@ class Admin(User):
         Then initialize attributes specific to an admin user.
         """
         super().__init__(first_name, last_name, age, location, occupation)
-        self.privilages = Privileges()
+        self.privileges = Privileges()
     
 joy = Admin("Joy", "Ndanu", 30, "Kenya", "Ai Engineer")
 jane = User("Jane", "Doe", 28, "New York", "Software Engineer")
@@ -62,7 +62,7 @@ mary = User("Mary", "Bling", 49, "Uganda", "Data Scientist")
 jack = User("Jack", "Sparrow", 35, "Caribbean", "Pirate")
 
 joy.describe_user()
-joy.privilages.show_privileges()
+joy.privileges.show_privileges()
 joy.increment_login_attempts()
 joy.increment_login_attempts()
 joy.increment_login_attempts()
