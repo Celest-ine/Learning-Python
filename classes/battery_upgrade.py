@@ -36,7 +36,7 @@ class Car:
 class Battery:
     """Simple attempt to model a battery for an electric car."""
 
-    def __init__(self, battery_size=75):
+    def __init__(self, battery_size=40):
         """Initialize the battery attributes."""
 
         self.battery_size = battery_size
@@ -44,6 +44,15 @@ class Battery:
     def describe_battery(self):
         """Print a statement describing the battery size."""
         print(f"This car has a {self.battery_size}-kWh battery.")
+
+    def upgrade_battery(self):
+        """Check the battery size and change it to a 75 capacity if its not."""
+
+        if self.battery_size == 40:
+            self.battery_size = 75
+            print("You battery has been upgraded to 75-kwh")
+        else:
+            print("Your battery size is optimum!")
 
     def get_range(self):
         """Print a statement about the range that this battery provides."""
@@ -68,6 +77,8 @@ class ElectricCar(Car):
 my_leaf = ElectricCar('nissan','leaf', 2024)
 print(my_leaf.get_descriptive_name())
 my_leaf.battery.describe_battery()
+my_leaf.battery.get_range()
+my_leaf.battery.upgrade_battery()
 my_leaf.battery.get_range()
 print()
 
