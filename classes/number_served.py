@@ -58,8 +58,10 @@ class IceCreamStand(Restaurant):
 
 my_ice_cream_stand = IceCreamStand("Sweet Treats")
 my_ice_cream_stand.describe_restaurant()
+my_ice_cream_stand.open_restaurant()
 my_ice_cream_stand.flavors = ["blueberry", "vanilla", "chocolate fudge"]
 my_ice_cream_stand.display_flavors()
+print()
 
 restaurant = Restaurant("Sarovar", "Italian")
 
