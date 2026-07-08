@@ -64,21 +64,9 @@ class Admin(User):
         super().__init__(first_name, last_name, age, location, occupation)
         self.privileges = Privileges()
     
-joy = Admin("Joy", "Ndanu", 30, "Kenya", "Ai Engineer")
 jane = User("Jane", "Doe", 28, "New York", "Software Engineer")
 mary = User("Mary", "Bling", 49, "Uganda", "Data Scientist")
 jack = User("Jack", "Sparrow", 35, "Caribbean", "Pirate")
-
-joy.describe_user()
-joy.privileges.show_privileges()
-joy.increment_login_attempts()
-joy.increment_login_attempts()
-joy.increment_login_attempts()
-joy.increment_login_attempts()
-joy.display_login_attempts()
-joy.reset_login_attempts()
-joy.display_login_attempts()
-print()
 
 jane.describe_user()
 jane.increment_login_attempts()
