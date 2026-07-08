@@ -16,11 +16,11 @@ class Die:
         face_of_die = randint(1, self.sides)
         print(f"Your rolled a {face_of_die}")
 
-my_die_roll = Die()
-my_die_roll.roll_die()
+six_die_roll = Die()
+six_die_roll.roll_die()
 
-ben_die_roll = Die(20)
-ben_die_roll.roll_die()
+twenty_die_roll = Die(20)
+twenty_die_roll.roll_die()
 
-sarah_die_roll = Die(10)
-sarah_die_roll.roll_die()
+ten_die_roll = Die(10)
+ten_die_roll.roll_die()
