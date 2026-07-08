@@ -1,5 +1,6 @@
 """Create an instance of Admin."""
-from users import User, Privileges, Admin
+from users import User
+from admin import Privileges, Admin
 
 joy = Admin("Joy", "Ndanu", 30, "Kenya", "Ai Engineer")
 joy.describe_user()
