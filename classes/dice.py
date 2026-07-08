@@ -17,7 +17,8 @@ class Die:
         print(f"Your rolled a {face_of_die}")
 
 six_die_roll = Die()
-six_die_roll.roll_die()
+for _ in range(10):
+    six_die_roll.roll_die()
 
 twenty_die_roll = Die(20)
 twenty_die_roll.roll_die()
