@@ -12,18 +12,18 @@ class Lottery:
     def display_ticket(self):
         """Displays the winning ticket."""
 
-        batch = choices(self.numbers, self.characters)
+        batch = choices([self.numbers, self.characters])
         ticket = []
 
         if batch == self.numbers:
             for _ in range(4):
                 number = choices(self.numbers)
-                ticket = number.append()
+                ticket.append(number)
 
         else:
             for _ in range(4):
                 char = choices(self.characters)
-                ticket = char.append()
+                ticket.append(char)
 
         print(f"The winning ticket is {ticket}")
 
