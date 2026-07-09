@@ -12,7 +12,7 @@ class Lottery:
     def display_ticket(self):
         """Displays the winning ticket."""
 
-        batch = choices([self.numbers, self.characters])
+        batch = choices((self.numbers, self.characters))
         ticket = []
 
         if batch == self.numbers:
